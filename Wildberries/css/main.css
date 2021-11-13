@@ -1,0 +1,454 @@
+@font-face {
+	font-family: "SagataBold";
+	src: url(../fonts/SagataBold.otf);
+}
+@font-face {
+	font-family: "LatoLight";
+	src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+	font-family: "LatoReg";
+	src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+	font-family: "LatoBold";
+	src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face {
+	font-family: "SagataSemiReg";
+	src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+
+body{
+	background-color: #ffffff;
+}
+.container{
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+.HeadContainer{
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.HeadContainer *{
+	font-family: "SagataBold";
+	color: #fff;
+}
+.HeadContainer h1{
+	text-transform: uppercase;
+	font-size: 42px; 
+}
+.head-hold{
+	height: 80px;
+	background-color: #aa1296;
+}
+
+.settings{
+	width: 15%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.settings hr{
+	background-color: #fff;
+	border: none;
+}
+.HeadContainer input{
+	text-align: center;
+	opacity: 0.9;
+	display: block;
+	font-size: 16px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	background-color: #ae52a7;
+	font-family: "LatoLight";
+	width: 39%;
+	height: 37px;
+	border-radius: 20px;
+	border: none;
+	background-image: url('../img/searcher.svg');
+    background-repeat: no-repeat; 
+    background-size: 18px;
+    background-position: 44% 11px;
+	transition: all 0.2s ease;
+	outline: none;
+}
+.HeadContainer input::-moz-placeholder { color: #fff; }
+.HeadContainer input::-webkit-input-placeholder { color: #fff; }
+.HeadContainer input:hover{
+	background-color: #b778b2;
+}
+.HeadContainer input:active{
+	background-color: #b778b2;
+}
+.icon-wrapper{
+	cursor: pointer;
+	border-radius: 100px;
+	width: 42px;
+	height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ae52a7;
+	background-color: #ae52a7;
+	transition: all 0.2s ease;
+}
+.icon-wrapper:hover{
+	background-color: #b778b2;
+}
+
+section#content h1{
+	padding-top: 70px;
+	padding-left: 60px;
+	color: #000;
+	font-size: 30pt;
+	font-family: "LatoReg";
+}
+#goodsNumber{
+	font-family: "LatoReg";
+	padding-left: 20px;
+	font-size: 11pt;
+	color: #7a7a7a;
+
+}
+.tagHolder{
+	margin-top: 35px;
+	column-gap: 10px;
+	display: flex;
+	justify-content: center;
+}
+.tag{
+	cursor: pointer;;
+	color: #000;
+	border: 1px solid #b778b2;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 4px;
+	padding-bottom: 5px;
+	font-size: 11pt;
+	font-family: "LatoReg";
+	border-radius: 15px;
+	transition: all 0.2s ease;
+}
+.tag:hover {
+	background-color: #ae52a7;
+	border: 1px solid #ae52a7;
+	color: white;
+}
+.goodsHolder{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 7%;
+}
+.card{
+	opacity: 0.5;
+	padding-bottom: 10px;
+	max-width: 17%;
+	margin-bottom: 35px;
+	flex:1 1 calc(25% - 8%);
+	transition: all 0.3s ease;
+	transform: translate(0px , -100px);
+}
+.card.active{
+	transform: translate(0px , 0px);
+	opacity: 1;
+
+}
+.info {
+	display: flex;
+	justify-content: space-between;
+}
+.info h3 {
+	padding: 0 5px;
+	color: #000;
+	margin-top: 7px;
+	font-size: 14pt;
+	font-family: "LatoBold";
+}
+.price span{
+	color: #000;
+	margin-left: 5px;
+}
+.goodsHolder img{
+	width: 100%;
+
+}
+.card h5 {
+	padding: 0 5px;
+	margin-top: 3px;
+	color: #7a7a7a;
+	font-size: 12pt;
+	font-family: "LatoReg";
+}
+.buttonHolder{
+	margin-top: 25px;
+	text-align: center;
+}
+.card a{
+	outline: none;
+	text-decoration: none;
+	text-align: center;
+	font-family: "LatoLight";
+	font-size: 12pt;
+	color: white;
+	background-color: #ae52a7;
+	border-radius: 15px;
+	padding-left: 23px;
+	padding-right: 23px;
+	padding-top: 6px;
+	padding-bottom: 7px;
+	transition: all 0.2s ease;
+}
+.card a:hover{
+	background-color: #b778b2;
+
+}
+
+/*____SearchPredictions____*/
+
+
+
+.searchPredictions{
+	padding: 0;
+	margin: 0;
+	z-index: 100;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	color: #000000;
+	left: 0;
+	border-radius: 0 0 20px 20px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	top: 80px ;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	background-color: #fff;
+	transform: translate(0, -3000px);
+	transition: opacity 0.5s ease;
+}
+.grass{
+
+
+}
+
+.ballsHolder{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	row-gap: 0px;
+}
+.searchPredictions.active {
+
+	transform: translate(0px, 0px);
+	opacity: 1;
+
+}
+.dot{
+	font-size: 1vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	opacity: 0.3;
+	border-radius: 300px;
+	z-index: 1;
+	position: absolute;
+}
+.ball{
+	box-shadow:  0px 0px 13px rgba(0,0,0,0.5);;
+	z-index: 200;
+	cursor: pointer;
+	background-color: #ae52a7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 140px;
+	height: 140px;
+	border: 1px solid #ae52a7;
+	border-radius: 150px;
+	transform: scale(1, 1) translate(0px , -100px);
+	transition: all 0.6s ease;
+}
+.searchPredictions.active .ball {
+	transform: scale(1, 1) translate(0px , 20px);
+}
+.br{
+	flex-basis: 100%;
+	height: 0;
+}
+.ball h5{
+	line-height: 20px;
+	text-transform: uppercase;
+	opacity: 1;
+	color: #fff;
+	font-size: 8pt;
+	font-family: "SagataSemiReg";
+	text-align: center;
+}
+
+/*____CurrentBalls____*/
+
+#firstBall{
+	width: 150px;
+	height: 150px;
+	margin-top: 40px;
+	transition: all 0.6s ease;
+}
+#firstBall:hover{
+	width: 165px;
+	height: 165px;
+}
+#secondBall{
+	width: 200px;
+	height: 200px;
+	transition: all 0.5s ease;
+}
+#secondBall:hover{
+	width: 210px;
+	height: 210px;
+}
+#thirdBall{
+	width: 150px;
+	height: 150px;
+	margin-top: 40px;
+	transition: all 0.6s ease;
+}
+#thirdBall:hover{
+	width: 165px;
+	height: 165px;
+}
+#fourthBall{
+	margin-top: 15px;
+	transition: all 0.7s ease;
+}
+#fifthBall{
+	width: 150px;
+	height: 150px;
+	margin-top: -25px;
+	transition: all 0.6s ease;
+}
+#fifthBall:hover{
+	width: 165px;
+	height: 165px;
+}
+#sixthBall{
+	width: 150px;
+	height: 150px;
+	margin-top: -25px;
+	transition: all 0.6s ease;
+}
+#sixthBall:hover{
+	width: 165px;
+	height: 165px;
+}
+#seventhBall{
+	margin-top: 15px;
+	transition: all 0.7s ease;
+}
+#eightBall{
+	transition: all 0.7s ease;
+}
+#ninthBall{
+	margin-top: -40px;
+	transition: all 0.7s ease;
+}
+#tenthBall{
+	transition: all 0.7s ease;
+}
+#eleventhBall{
+	width: 130px;
+	height: 130px;
+	transition: all 0.8s ease;
+}
+#eleventhBall:hover {
+	width: 165px;
+	height: 165px;
+}
+#twelfthBall{
+	width: 130px;
+	height: 130px;
+	transition: all 0.8s ease;
+}
+#twelfthBall:hover {
+	width: 165px;
+	height: 165px;
+}
+/*____CurrentBalls____*/
+.ball:hover{
+	background-color: #aa1296;
+	width: 165px;
+	height: 165px;
+}
+/*____SearchPredictions____*/
+
+@media (max-width: 767px) {
+
+}
+@media (max-width: 540px) {
+
+	.HeadContainer{
+		flex-direction: column;
+		align-items: center;
+	}
+	.HeadContainer h1{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.HeadContainer input{
+		align-items: center;
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	.head-hold{
+		height: auto;
+	}
+
+}
+
+
+@media (max-width: 425px) {
+	.HeadContainer input{
+		align-items: center;
+		width: 80%;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+
+
+
+
+

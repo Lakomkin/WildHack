@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/cerulean/bootstrap.min.css">-->
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+
+
+
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    	<div class="head-hold">
+    		<div class="HeadContainer">
+				<a href=""><h1>WildBerries</h1></a>
+	    		<input type="text" placeholder="Я ищу..." style="color:white;" id="searcher">
+
+
+
+				<div class="searchPredictions" id="predict">
+					<div class="grass"><img src="https://img.icons8.com/color/96/000000/grass.png"/></div>
+					<div class="br"></div>
+					<div class="ballsHolder">
+
+						<div class="ball" id="firstBall"><h5>Пижама женская <br>со штанами </h5></div>
+						<div class="ball" id="secondBall"><h5>Пижама PurpleGrape </h5></div>
+						<div class="ball" id="thirdBall"><h5>Пижама женская <br>со шортами</h5></div>
+						<div class="br"></div>
+						<div class="ball" id="fourthBall"><h5>Пижама для девочки </h5></div>
+						<div class="ball" id="fifthBall"><h5>Пижама Pumbie </h5></div>
+						<div class="ball" id="sixthBall"><h5>Пижама для <br> детей Pumbie</h5></div>
+						<div class="ball" id="seventhBall"><h5>Пижама для мальчика </h5></div>
+						<div class="br"></div>
+						<div class="ball" id="eightBall"><h5>Пижама ТВОЁ </h5></div>
+						<div class="ball" id="ninthBall"><h5>Пижама мужская <br>со штанами </h5></div>
+						<div class="ball" id="tenthBall"><h5>Пижама женская <br>с брюками</h5></div>
+						<div class="br"></div>
+						<div class="ball" id="eleventhBall"><h5>Пижама женская <br>со штанами <br>большие размеры </h5></div>
+						<div class="ball" id="twelfthBall"><h5>Пижама женская <br>со штанами <br>большие размеры </h5></div>
+					</div>
+					<div class="dot">WILDBERRIES</div>
+					<div class="dot">WILDBERRIES</div>
+					<div class="dot">WILDBERRIES</div>
+					<div class="dot">WILDBERRIES</div>
+					<div class="dot">WILDBERRIES</div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+
+				</div>
+
+
+
+
+
+	    		<div class="settings">
+	    			<div class="icon-wrapper">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+							<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+						</svg>
+					</div>
+	    			<hr noshade width="1" size="40">
+					<div class="icon-wrapper">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+							<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+						</svg>
+					</div>
+					<hr noshade width="1" size="40">
+					<div class="icon-wrapper">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+							<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+							<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+						</svg>
+					</div>
+	    		</div>
+    		</div>
+    	</div>
+    </header>
+
+
+	<section id="content">
+		<div class="container">
+			<h1>По запросу "Шапка" найено: <span id="goodsNumber">312 412 товаров</span></h1>
+			<div class="tagHolder">
+				<h5 class="tag">#шуба</h5>
+				<h5 class="tag">#кардиган</h5>
+				<h5 class="tag">#носки</h5>
+				<h5 class="tag">#перчатки</h5>
+				<h5 class="tag">#чайник</h5>
+				<h5 class="tag">#аврора</h5>
+				<h5 class="tag">#земля</h5>
+				<h5 class="tag">#порошок</h5>
+
+			</div>
+			<div class="goodsHolder">
+				<div class="card anim">
+					<img src="img/card_image.jpeg" alt="">
+					<div class="info">
+						<h3>Штаны чёрные</h3>
+						<h3 class="price">3 990 <span>₽</span></h3>
+					</div>
+					<h5>Gucci / Брюки</h5>
+					<div class="buttonHolder"><a href="#">В корзину</a></div>
+				</div>
+				<div class="card anim"><img src="img/card_image.jpeg" alt="">
+					<div class="info">
+						<h3>Штаны чёрные</h3>
+						<h3 class="price">3 990 <span>₽</span></h3>
+					</div>
+					<h5>Gucci / Брюки</h5>
+					<div class="buttonHolder"><a href="#">В корзину</a></div>
+				</div>
+				<div class="card anim"><img src="img/card_image.jpeg" alt="">
+					<div class="info">
+						<h3>Штаны чёрные</h3>
+						<h3 class="price">3 990 <span>₽</span></h3>
+					</div>
+					<h5>Gucci / Брюки</h5>
+					<div class="buttonHolder"><a href="#">В корзину</a></div>
+				</div>
+				<div class="card anim"><img src="img/card_image.jpeg" alt="">
+					<div class="info">
+						<h3>Штаны чёрные</h3>
+						<h3 class="price">3 990 <span>₽</span></h3>
+					</div>
+					<h5>Gucci / Брюки</h5>
+					<div class="buttonHolder"><a href="#">В корзину</a></div>
+				</div>
+				<div class="card anim"><img src="img/card_image.jpeg" alt="">
+					<div class="info">
+						<h3>Штаны чёрные</h3>
+						<h3 class="price">3 990 <span>₽</span></h3>
+					</div>
+					<h5>Gucci / Брюки</h5>
+					<div class="buttonHolder"><a href="#">В корзину</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<script src="js/app.js">
+	</script>
+</body>
+</html>
+
